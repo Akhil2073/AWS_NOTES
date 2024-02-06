@@ -1,0 +1,28 @@
+
+
+=============================== EC2 CREATION IN 7 STEPS ============================
+
+1.⁠ ⁠TAGS = NAME, TAGS
+2.⁠ ⁠AMI = OS, SOFWARES
+3.⁠ ⁠INSTANCE_TYPE = RAM, CPU
+4.⁠ ⁠KEY_PAIR = LOGIN (PUBLIC=AWS, PRIVATE=USER)
+5.⁠ ⁠NETWORKING = VPC, SECURITY GROUPS
+6.⁠ ⁠STORAGE = EBS VOLUME (8GB, 16TB)
+7.⁠ ⁠SUMMARY
+
+VPC= VIRTUAL PRIVATE CLOUD (creats seperate n/w)
+SG= DEFINE PORT NUMBERS (0-65535)
+SSH = SECURE SHELL (22) -- > TO COMMUNICATE WITH SERVER
+
+--------------------------------------------------------------------------------------
+===================    SAMPLE DEPLOY   =====================
+
+yum install httpd git -y 
+systemctl start httpd
+systemctl status httpd 
+cd /var/www/html
+git clone https: //github.com/CleverProgrammers/pwj-netflix-clone.git
+mv pwj-netflix-clone/*  .
+tail -100f /var/log/httpd/access_10g
+
+ ===================== ===================== ===================== =====================
